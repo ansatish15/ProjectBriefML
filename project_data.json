@@ -1,0 +1,242 @@
+[
+  {
+    "id": "HH1",
+    "text": "In Brief\nAutomatically screen incoming resumes, rank candidates, and generate personalized interview prep guides within your ATS.\n\nWhat Needs to Happen\n- Parses resumes (PDF, DOCX)\n- Scores relevance against job descriptions (keywords, skills, experience)\n- Suggests tailored interview questions and learning resources\n\nOpportunity & Hypothesis\n- Opportunity: Recruiters spend 60% of time on initial screens.\n- Hypothesis: Automating screening + prep will cut time-to-hire by 40% and boost candidate satisfaction by 25%.\n\nSuccess Criteria\n- Precision: ≥ 85% of top-ranked resumes match human reviewer picks.\n- Throughput: 500 resumes/hour processed.\n- Engagement: 70% of shortlisted candidates use the prep coach.\n- CSAT: ≥ 4.5/5 from talent teams.\n\nScope\n- In: Resume parsing (NLTK, spaCy NER), TF-IDF matching, GPT-powered question generator, CSV/ATS export.\n- Out: Video-based interview practice, personality assessments.",
+    "clarity": 1,
+    "feasibility": 1
+  },
+  {
+    "id": "HH2",
+    "text": "In Brief\nDeliver a real-time dashboard that predicts HVAC and lighting energy consumption and recommends efficiency optimizations.\n\nWhat Needs to Happen\n- Ingests IoT sensor streams (temperature, occupancy, light)\n- Forecasts next-day energy usage\n- Pushes actionable alerts (“Set thermostat +2°F at 6 PM”)\n\nOpportunity & Hypothesis\n- Opportunity: Buildings can cut 20% in utility costs with proactive controls.\n- Hypothesis: Predictive alerts reduce consumption by 15% and lower peak demand charges.\n\nSuccess Criteria\n- Forecast MAPE: ≤ 10% error on 24h consumption.\n- Alert Acceptance: ≥ 60% of recommendations applied.\n- Energy Savings: ≥ 12% over baseline in pilot.\n\nScope\n- In: MQTT ingestion, time-series modeling (Prophet), threshold-based alert engine, web dashboard.\n- Out: Automated device control, utility billing integration.",
+    "clarity": 1,
+    "feasibility": 1
+  },
+  {
+    "id": "HH3",
+    "text": "In Brief\nCreate a CI/CD plugin that runs static analysis, flags security vulnerabilities, and explains fixes inline.\n\nWhat Needs to Happen\n- Scans new pull requests for OWASP Top 10 issues\n- Annotates code diffs with vulnerability descriptions\n- Suggests remediation snippets (e.g., parameterized queries)\n\nOpportunity & Hypothesis\n- Opportunity: 30% of bugs are security-related.\n- Hypothesis: Inline review reduces vulnerabilities in production by 50%.\n\nSuccess Criteria\n- Detection Rate: ≥ 90% of seeded vulnerabilities caught.\n- False Positives: ≤ 5% per scan.\n- Dev Adoption: 80% of PRs scanned automatically.\n- MTTR: Mean time to remediation < 24 hrs.\n\nScope\n- In: Python/JavaScript/Java static analysis, ESLint/Bandit integration, GitHub Actions plugin.\n- Out: Dynamic analysis (fuzzing), language-agnostic AI fixes.",
+    "clarity": 1,
+    "feasibility": 1
+  },
+  {
+    "id": "HH4",
+    "text": "In Brief\nAnalyze live chat and email transcripts to surface negative sentiment and recommend de-escalation scripts to agents.\n\nWhat Needs to Happen\n- Classifies messages as positive/neutral/negative\n- Highlights high-risk tickets\n- Suggests empathetic reply templates\n\nOpportunity & Hypothesis\n- Opportunity: 25% of escalations trace back to late sentiment flagging.\n- Hypothesis: Early detection reduces escalations by 30% and increases CSAT by 15%.\n\nSuccess Criteria\n- Classification F1: ≥ 0.88 on negative class.\n- Alert Latency: < 5 seconds per message.\n- CSAT Improvement: +0.3 points in pilot.\n\nScope\n- In: Transformer-based sentiment model (DistilBERT), webhook integration with Intercom/Zendesk, template library.\n- Out: Voice-call sentiment analysis, multi-language support beyond EN.",
+    "clarity": 1,
+    "feasibility": 1
+  },
+  {
+    "id": "HH5",
+    "text": "In Brief\nDeploy an edge-to-cloud ML system that forecasts equipment failures and schedules maintenance proactively.\n\nWhat Needs to Happen\n- Collects vibration, temperature, and current sensors at edge\n- Predicts failures with ≥ 7 days lead time\n- Triggers work orders in ERP\n\nOpportunity & Hypothesis\n- Opportunity: Reactive maintenance leads to 15% production loss.\n- Hypothesis: Predictive alerts reduce downtime by 40% and maintenance costs by 25%.\n\nSuccess Criteria\n- Precision@7d: ≥ 0.8 true positives with < 0.1 false positive rate.\n- Throughput: Process 10 streams/sec per edge device.\n- Work Order Automation: 90% of alerts auto-generate tickets.\n\nScope\n- In: Edge data ingestion (edge Python agent), LSTM time-series model, REST API to ERP (SAP).\n- Out: AR/VR guided repairs, procurement integration.",
+    "clarity": 1,
+    "feasibility": 1
+  },
+  {
+    "id": "HH6",
+    "text": "In Brief\nCreate an AI platform that analyzes learner profiles and crafts individualized course sequences with video, quiz, and project modules.\n\nWhat Needs to Happen\n- Profiles skills via pre-assessment quizzes\n- Recommends next-module based on mastery\n- Adapts in real-time to learner progress\n\nOpportunity & Hypothesis\n- Opportunity: Adaptive learning increases completion by 50%.\n- Hypothesis: Personalized paths boost retention by 40% and skill gains by 30%.\n\nSuccess Criteria\n- Completion Rate: ≥ 70% of learners finish assigned paths.\n- Skill Improvement: +20% quiz score uplift.\n- Engagement: Daily active users ≥ 60% of enrollments.\n\nScope\n- In: Django backend, recommendation engine (collaborative filtering + RL), React LMS frontend.\n- Out: VR/AR modules, live tutor integration.",
+    "clarity": 1,
+    "feasibility": 1
+  },
+  {
+    "id": "HH7",
+    "text": "In Brief\nBuild a mobile app that analyzes patient-entered metrics and wearable data to offer daily health recommendations for diabetes management.\n\nWhat Needs to Happen\n- Ingests CGM (continuous glucose) and activity tracker data\n- Correlates meals, exercise, and glucose trends\n- Pushes personalized diet/exercise tips\n\nOpportunity & Hypothesis\n- Opportunity: 50% of diabetic patients miss daily targets.\n- Hypothesis: Timely AI-driven tips improve target adherence by 35% and reduce A1C by 0.5 points in 3 months.\n\nSuccess Criteria\n- Tip Relevance: ≥ 90% positive feedback on recommendations.\n- Engagement: Daily active users ≥ 70%.\n- Clinical Impact: ≥ 0.3 point A1C reduction average.\n\nScope\n- In: iOS/Android React Native app, Bluetooth Low Energy (BLE) for CGM, REST API, recommendation engine.\n- Out: Direct insulin dosing recommendations, telehealth video.",
+    "clarity": 1,
+    "feasibility": 1
+  },
+  {
+    "id": "HH8",
+    "text": "In Brief\nDeploy an AI pipeline that forecasts SKU demand by store and automatically recommends replenishment orders.\n\nWhat Needs to Happen\n- Ingests POS sales, promotions, and seasonality\n- Forecasts per-SKU, per-store demand 4 weeks ahead\n- Generates reorder recommendations for ERP\n\nOpportunity & Hypothesis\n- Opportunity: 15% revenue lost to stock-outs.\n- Hypothesis: Accurate forecasts and automatic orders reduce stock-outs by 50% and carrying costs by 20%.\n\nSuccess Criteria\n- Forecast RMSE: ≤ 12% error across SKUs.\n- Order Adoption: 85% of AI recommendations accepted.\n- Inventory Turn: +10% improvement in turnover ratio.\n\nScope\n- In: Spark ETL jobs, XGBoost forecasting model, REST API to SAP/Oracle, web UI for overrides.\n- Out: Multi-tier supplier collaboration portal.",
+    "clarity": 1,
+    "feasibility": 1
+  },
+  {
+    "id": "HH9",
+    "text": "In Brief\nImplement a vision system that inspects parts on the line, detects defects ≥ 2 mm, and routes failures to rework stations.\n\nWhat Needs to Happen\n- High-res camera + lighting setup\n- Real-time defect detection (cracks, misalignments)\n- Integration with MES for rework alerts\n\nOpportunity & Hypothesis\n- Opportunity: Human inspection catches only 92% of micro-defects.\n- Hypothesis: Automated vision boosts defect detection to 99% and reduces returns by 30%.\n\nSuccess Criteria\n- Detection Recall: ≥ 0.99 for defect class ≥ 2 mm.\n- Throughput: 120 parts/minute inspected.\n- Rework Rate: 20% reduction in scrap.\n\nScope\n- In: OpenCV preprocessing, TensorFlow object detection (SSD), edge inference on NVIDIA Jetson, MQTT alerts.\n- Out: 3D scanning, AI-guided robotic sorting.",
+    "clarity": 1,
+    "feasibility": 1
+  },
+  {
+    "id": "HH10",
+    "text": "In Brief\nBuild a web-based AR feature that maps 3D garment models onto user images for realistic “try-on” experiences.\n\nWhat Needs to Happen\n- 3D model rendering engine\n- Body-shape estimation from selfie\n- Real-time garment draping\n\nOpportunity & Hypothesis\n- Opportunity: 30% of returns due to poor fit visualization.\n- Hypothesis: VR-try-on reduces returns by 25% and increases conversion by 15%.\n\nSuccess Criteria\n- Fit Estimate Error: ≤ 5% size deviation.\n- Render FPS: ≥ 24 fps on desktop/mobile.\n- Conversion Lift: +12% in pilot users.\n\nScope\n- In: Three.js WebGL renderer, TensorFlow.js body-pose estimation, WebAR via 8th Wall SDK.\n- Out: Full VR headset support, custom pattern adjustments.",
+    "clarity": 1,
+    "feasibility": 1
+  },
+  {
+    "id": "LH1",
+    "text": "We need a service for keeping inventory data in sync across multiple sales channels. It should handle all products and update things quickly, ideally faster than the competition.\n\nWhat Needs to Happen\n- Capture updates from our ERP and e-commerce platforms\n- Stream data to downstream systems\n- Retry failed updates and log issues\n- Provide some kind of dashboard or logs, maybe an API\n\nOpportunity & Hypothesis\n- Opportunity: We hear stock-outs happen sometimes\n- Hypothesis: If data is synced more often, things might improve\n\nSuccess Criteria\n- Data eventually consistent most of the time\n- Teams stop complaining about manual fixes\n- Errors get surfaced somehow\n\nScope\n- In Scope: Connectors for Shopify, Magento, SAP; AWS Kinesis; Lambda functions\n- Out of Scope: Billing reconciliation, manual overrides, UI polish\n\nTech Stack & Feasibility\n- Streaming: AWS Kinesis Data Streams → AWS Lambda handlers\n- Storage: DynamoDB with streams enabled\n- Retry Logic: Step Functions workflows\n- Monitoring: CloudWatch logs + custom SNS alerts\n- Dashboard: Basic React app fetching from API Gateway + Lambda",
+    "clarity": 0,
+    "feasibility": 1
+  },
+  {
+    "id": "LH2",
+    "text": "Aggregate logs from all our microservices, let people query them, and surface insights. It’s like central logging, but with analysis features.\n\nWhat Needs to Happen\n- Pipe logs from containers into a central place\n- Index logs for search and analytics\n- Provide alerting on certain patterns\n- Maybe run some ML jobs on the logs to find anomalies\n\nOpportunity & Hypothesis\n- Opportunity: We sometimes don’t know when things break\n- Hypothesis: Central logs help ops teams spot issues faster\n\nSuccess Criteria\n- Logs searchable enough\n- Alerts go out occasionally\n- Some dashboards get built\n\nScope\n- In Scope: Fluentd or Filebeat → Elasticsearch cluster → Kibana\n- Out of Scope: Building an entirely custom analytics engine, full-blown ML ops, data retention policies\n\nTech Stack & Feasibility\n- Log Shippers: Fluentd in Kubernetes DaemonSets\n- Indexing: Elasticsearch Service on AWS or self-managed on EC2\n- Dashboards: Kibana or Grafana with Elasticsearch datasource\n- Alerting: ElastAlert or built-in Watcher; notifications via Slack webhook",
+    "clarity": 0,
+    "feasibility": 1
+  },
+  {
+    "id": "LH3",
+    "text": "A system to onboard new customers automatically through email and REST endpoints, reducing manual steps.\n\nWhat Needs to Happen\n- Expose an API that clients call to create accounts\n- Send welcome emails and follow-ups\n- Archive records in a database\n- Provide some reporting on who completed steps\n\nOpportunity & Hypothesis\n- Opportunity: Manual onboarding takes too long\n- Hypothesis: Automation speeds that up, but we need to see if it’s measurable\n\nSuccess Criteria\n- Accounts created through API\n- Emails sent — people read some percentage\n- Reports available in some form\n\nScope\n- In Scope: Node.js API on Express; PostgreSQL for persistence; AWS SES for email\n- Out of Scope: CRM integration, analytics dashboard beyond basic queries\n\nTech Stack & Feasibility\n- Backend: Node.js + Express + Sequelize ORM\n- Database: Amazon RDS (PostgreSQL)\n- Email: AWS SES + templating in Handlebars\n- Reporting: Simple SQL queries via pgAdmin or CLI",
+    "clarity": 0,
+    "feasibility": 1
+  },
+  {
+    "id": "LH4",
+    "text": "Implement a feature-flag service so teams toggle features on and off without deployments. It should support multiple environments and maybe a UI.\n\nWhat Needs to Happen\n- Backend to store flag definitions\n- Client SDKs for web/mobile apps\n- UI to view and change flags\n- Caching or low-latency access for flags\n\nOpportunity & Hypothesis\n- Opportunity: Rollouts sometimes go wrong\n- Hypothesis: Feature-flags reduce risk; we’ll see if they reduce rollback incidents\n\nSuccess Criteria\n- Flags toggle in real time\n- Developers use SDKs\n- UI is usable — at least minimally\n\nScope\n- In Scope: Go-based microservice; Redis or DynamoDB for storage; React admin console\n- Out of Scope: A/B test analytics, permission management beyond basic roles\n\nTech Stack & Feasibility\n- Service: Go + Gin framework in Docker\n- Storage: Redis with TTL or DynamoDB (choose one)\n- SDKs: JavaScript (browser), Swift (iOS), Kotlin (Android)\n- UI: React + Ant Design, hosted on AWS Amplify",
+    "clarity": 0,
+    "feasibility": 1
+  },
+  {
+    "id": "LH5",
+    "text": "Extract data from various sources, transform it, and load into a data warehouse. Then people can run BI queries.\n\nWhat Needs to Happen\n- Connect to MySQL, S3, and Google Sheets\n- Normalize schema and join data\n- Load into Redshift or Snowflake\n- Provide access to analysts\n\nOpportunity & Hypothesis\n- Opportunity: Data lives in silos\n- Hypothesis: Central warehouse makes insights possible, but timelines are unclear\n\nSuccess Criteria\n- Data pipeline runs nightly\n- Tables load with recent data\n- Analysts don’t complain (much)\n\nScope\n- In Scope: Apache Airflow on AWS ECS; Python ETL scripts; Redshift cluster\n- Out of Scope: Real-time streaming, data modeling/semantic layer, scheduling beyond basic cron\n\nTech Stack & Feasibility\n- Orchestration: Apache Airflow with DockerOperator\n- Transforms: Pandas + SQLAlchemy\n- Warehouse: Amazon Redshift or Snowflake (configurable)\n- Access: Looker or Tableau desktop connects to warehouse",
+    "clarity": 0,
+    "feasibility": 1
+  },
+  {
+    "id": "LH6",
+    "text": "Host multiple independent front-end apps under one shell, load them dynamically. Useful for large teams building features in isolation.\n\nWhat Needs to Happen\n- Set up a container host or static server\n- Bundle front-ends as micro-apps with Webpack Module Federation\n- Provide a shell that orchestrates loading\n- Basic routing or nav UI\n\nOpportunity & Hypothesis\n- Opportunity: Teams clash in monolithic front-end\n- Hypothesis: Microfrontends reduce merge conflicts; measure dev velocity\n\nSuccess Criteria\n- Micro-apps load without full page reload\n- Teams deploy independently\n- Shell handles errors gracefully\n\nScope\n- In Scope: React-based apps; Webpack Module Federation; NGINX reverse proxy\n- Out of Scope: SSR (server-side rendering), SEO optimization, cross-browser testing\n\nTech Stack & Feasibility\n- Shell & Apps: React 18 + Webpack 5\n- Proxy: NGINX configured with dynamic upstreams\n- Deployment: Docker + Kubernetes on AWS EKS\n- Monitoring: Prometheus + Grafana for latency",
+    "clarity": 0,
+    "feasibility": 1
+  },
+  {
+    "id": "LH7",
+    "text": "Generate reports from a database on a schedule and email them to recipients. Reports can be CSV, PDF, or HTML.\n\nWhat Needs to Happen\n- Define report queries in some format\n- Schedule via cron or scheduler service\n- Render results into templates\n- Send via email or upload to S3\n\nOpportunity & Hypothesis\n- Opportunity: Teams manually export data\n- Hypothesis: Automated delivery reduces ad-hoc requests\n\nSuccess Criteria\n- Reports run on schedule\n- Emails arrive with attachments\n- Recipients open them occasionally\n\nScope\n- In Scope: Python scripts with Jinja2 for templating; schedule via AWS EventBridge; SES for email\n- Out of Scope: Report designer UI, dynamic filtering by end users\n\nTech Stack & Feasibility\n- Language: Python 3.9 with click for CLI\n- Templating: Jinja2 + WeasyPrint for PDF\n- Scheduler: AWS EventBridge → Lambda → ECS tasks\n- Email: AWS SES with templated emails",
+    "clarity": 0,
+    "feasibility": 1
+  },
+  {
+    "id": "LH8",
+    "text": "Insert a gateway in front of our APIs to rate-limit clients and throttle usage dynamically based on load.\n\nWhat Needs to Happen\n- Deploy an API gateway or sidecar\n- Define rate-limit rules per client\n- Emit metrics to monitoring\n- Allow overrides via config\n\nOpportunity & Hypothesis\n- Opportunity: Some clients exceed quotas\n- Hypothesis: Gateway will protect services, but threshold settings TBD\n\nSuccess Criteria\n- Clients get HTTP 429 on overage\n- API uptime remains high\n- Monitoring dashboards show rates\n\nScope\n- In Scope: Kong or AWS API Gateway; Redis for token bucket; Grafana insights\n- Out of Scope: Billing integration, user self-service portal\n\nTech Stack & Feasibility\n- Gateway: Kong open-source or AWS API Gateway v2\n- Storage: Redis cluster for counters\n- Metrics: Prometheus exporter + Grafana\n- Config: YAML files in Git repo",
+    "clarity": 0,
+    "feasibility": 1
+  },
+  {
+    "id": "LH9",
+    "text": "Generate thumbnails of uploaded images in multiple sizes automatically, store them alongside originals.\n\nWhat Needs to Happen\n- Detect new uploads in a bucket\n- Trigger thumbnail tasks\n- Write back resized images\n- Provide metadata somewhere\n\nOpportunity & Hypothesis\n- Opportunity: Manual resizing is slow\n- Hypothesis: Automation speeds up web performance; ROI not quantified\n\nSuccess Criteria\n- Thumbnails generated eventually\n- Storage organized by prefix\n- Some logs show successes\n\nScope\n- In Scope: AWS S3 event notifications → Lambda; Python Pillow for resizing; S3 output\n- Out of Scope: CDN invalidation, cache headers management\n\nTech Stack & Feasibility\n- Function: AWS Lambda (Python 3.8)\n- Lib: Pillow for image processing\n- Storage: S3 buckets with lifecycle policies\n- Monitoring: CloudWatch metrics + SNS alerts",
+    "clarity": 0,
+    "feasibility": 1
+  },
+  {
+    "id": "LH10",
+    "text": "Provide SSO across all our web apps using OAuth2/OIDC, letting users log in once and access multiple services.\n\nWhat Needs to Happen\n- Deploy an identity provider (IdP)\n- Configure client apps for OAuth flows\n- Handle tokens and refresh logic\n- Support logout propagation\n\nOpportunity & Hypothesis\n- Opportunity: Users get frustrated with multiple logins\n- Hypothesis: SSO lowers support tickets; metrics TBD\n\nSuccess Criteria\n- Users sign in once per session\n- Token refresh works without errors\n- Logout logs out everywhere\n\nScope\n- In Scope: Keycloak or Auth0 as IdP; client libraries in apps; token introspection endpoint\n- Out of Scope: Custom MFA, social logins, audit logging\n\nTech Stack & Feasibility\n- IdP: Keycloak on Kubernetes or managed Auth0\n- Clients: OAuth2 libraries (OIDC-Client for JS, Spring Security for Java)\n- Storage: PostgreSQL for Keycloak or Auth0 internal DB\n- Deployment: Docker + Helm charts",
+    "clarity": 0,
+    "feasibility": 1
+  },
+  {
+    "id": "LL1",
+    "text": "In Brief\nWe want office lights to change color based on how people feel and the weather outside, using mysterious quantum modules. (But also sometimes based on random internet memes.)\n\nWhat Needs to Happen\n- Capture employees’ feelings through unspecified sensors\n- Combine weather data (sometimes live, sometimes predicted)\n- Trigger quantum light panels to shift hue, brightness, and intensity\n- Occasionally override with trending meme palettes\n\nOpportunity & Hypothesis\n- Opportunity: Mood lighting boosts morale (everyone says so)\n- Hypothesis: If lights sync with feelings, productivity will maybe improve; we’re not sure how to measure\n\nSuccess Criteria\n- Lights change “correctly” most of the time\n- Employees comment positively at least once per week\n- No glare complaints (unless it’s bright meme day)\n\nScope\n- In Scope: Feelings-to-color converter, weather-to-light bridge, quantum LED strips\n- Out of Scope: Control of actual quantum states, network security, power budgeting\n\nTech Stack & Feasibility\n- Sensors: “EmotionSense” wristbands (prototype doesn’t exist)\n- Weather API: Any free plan (accuracy optional)\n- Quantum Module: Labs tell us it’s coming—no ETA\n- Controller: Raspberry Pi “plus quantum hat”",
+    "clarity": 0,
+    "feasibility": 0
+  },
+  {
+    "id": "LL2",
+    "text": "In Brief\nPrint edible snacks that taste like any dish in the world, directly from a user’s thought, using a desktop “FlavorForge” device.\n\nWhat Needs to Happen\n- User thinks of a dish (e.g., “spicy ramen”)\n- Brain-computer interface captures taste profile\n- FlavorForge 3D-prints molecules in proper ratios onto a wafer\n- Machine learns preferences over time via neural feedback\n\nOpportunity & Hypothesis\n- Opportunity: People want infinite snack variety\n- Hypothesis: This will reduce grocery costs and hunger\n\nSuccess Criteria\n- Prints something that “kinda” resembles the dish\n- No food poisoning incidents\n- Users report “mostly satisfied” taste\n\nScope\n- In Scope: Brain taste capture, molecular printer, wafer substrate\n- Out of Scope: Health regulations, supply chain for exotic elements\n\nTech Stack & Feasibility\n- BCI: Consumer EEG headsets (not designed for taste)\n- Script: Python with PyTorch taste model (no dataset)\n- Hardware: Custom FlavorForge—prototype sketch only",
+    "clarity": 0,
+    "feasibility": 0
+  },
+  {
+    "id": "LL3",
+    "text": "In Brief\nAn AI that rewrites our entire corporate strategy every morning based on “market vibes,” social media sentiment, and lunar phases.\n\nWhat Needs to Happen\n- Ingest tweets, Reddit threads, and stock tickers\n- Read lunar calendars and horoscope feeds\n- Generate a new 50-page PowerPoint strategy deck\n- Email it to the executive team before breakfast\n\nOpportunity & Hypothesis\n- Opportunity: Always have a “fresh” strategy\n- Hypothesis: Reflecting cosmic trends increases revenue\n\nSuccess Criteria\n- Deck arrives by 7 AM ET daily\n- Executives read at least 5 slides\n- No internal emails complaining about nonsense\n\nScope\n- In Scope: Social + cosmic data ingestion, PPTX generation, SMTP delivery\n- Out of Scope: Human editing, legal review, alignment with budgets\n\nTech Stack & Feasibility\n- Data: Twitter API + web-scraped astrology blogs\n- Model: GPT-X “StarBiz” tuned on stock chatter\n- Output: python-pptx library (will break for long decks)",
+    "clarity": 0,
+    "feasibility": 0
+  },
+  {
+    "id": "LL4",
+    "text": "In Brief\nEnable users at home to instantly toggle simulated gravity levels (0.2 g to 2 g) for personalized workouts, using a single wall switch.\n\nWhat Needs to Happen\n- Detect user location relative to the switch\n- Activate localized gravity field generator behind their walls\n- Adjust gravitational pull inside the room\n- Provide a mobile app to schedule gravity sessions\n\nOpportunity & Hypothesis\n- Opportunity: Gym-goers crave variety in workouts\n- Hypothesis: Gravity changes improve gains\n\nSuccess Criteria\n- Gravity shifts within 2 seconds after switch\n- Users feel the difference (without falling through floor)\n- No complaints of floating furniture\n\nScope\n- In Scope: Gravity generator, room calibration, mobile scheduler\n- Out of Scope: Structural engineering, building code compliance\n\nTech Stack & Feasibility\n- Hardware: Wall-mounted “GravityBox” (no manufacturer)\n- Control: ESP32 microcontroller + Wi-Fi gravity API\n- App: Flutter prototype",
+    "clarity": 0,
+    "feasibility": 0
+  },
+  {
+    "id": "LL5",
+    "text": "In Brief\nWalls that change texture, temperature, and opacity based on collective team mood, pumping warmth when morale is low or cool glass when stressed.\n\nWhat Needs to Happen\n- Sense room temperature and detect voices’ emotional tone\n- Command wall panels to morph material (soft, rigid, translucent)\n- Heat or cool surfaces via embedded micro-heaters\n- Blend in with interior decor dynamically\n\nOpportunity & Hypothesis\n- Opportunity: Improve comfort and reduce stress\n- Hypothesis: Changes in wall ambience raise happiness\n\nSuccess Criteria\n- Walls morph in less than 30 s of mood shift\n- No power surges or injuries\n- Team feedback scores “neutral or above”\n\nScope\n- In Scope: Voice-to-emotion API, morphing panels, micro-heater grid\n- Out of Scope: HVAC integration, maintenance scheduling\n\nTech Stack & Feasibility\n- Emotion API: Cloud speech-to-text + sentiment\n- Panels: “ShapeShift” smart material—only in concept\n- Control: Node-RED flows on a local server",
+    "clarity": 0,
+    "feasibility": 0
+  },
+  {
+    "id": "LL6",
+    "text": "In Brief\nA platform where users stream entire alternate universes—custom physics, histories, cultures—on demand, like Netflix but for realities.\n\nWhat Needs to Happen\n- Host simulated worlds with unique rules\n- Stream sensory data (vision, sound, smell) in real time\n- Let users choose universe parameters via slider\n\nOpportunity & Hypothesis\n- Opportunity: Entertainment industry stagnating\n- Hypothesis: Infinite worlds will replace movies\n\nSuccess Criteria\n- Users connect in <5 s\n- Experience loads with <1% glitches\n- No complaints about motion sickness\n\nScope\n- In Scope: Virtual world generator, multi-sensory streaming, UI sliders\n- Out of Scope: Physical haptic devices, regulatory bodies\n\nTech Stack & Feasibility\n- Backend: Unreal Engine clusters on AWS\n- Streaming: Custom multi-sensory protocol (undocumented)\n- Client: WebGL + custom smell module",
+    "clarity": 0,
+    "feasibility": 0
+  },
+  {
+    "id": "LL7",
+    "text": "In Brief\nAn AI-driven robot that roams the office delivering compliments, pranks, or presentations to sculpt culture in real time.\n\nWhat Needs to Happen\n- Robotic platform navigates halls and desks\n- Onboard AI picks actions (compliment, harmless prank, slide deck)\n- Sensors track employee smiles or frowns\n- Adjust behavior based on team feedback\n\nOpportunity & Hypothesis\n- Opportunity: Culture efforts are inconsistent\n- Hypothesis: Robot keeps morale high 24/7\n\nSuccess Criteria\n- Robot performs ≥10 positive interactions/day\n- Employee smiles measured ≥75% of interactions\n- No HR incidents\n\nScope\n- In Scope: SLAM navigation, emotion detection, deck projection\n- Out of Scope: Battery swaps, maintenance\n\nTech Stack & Feasibility\n- Robot: DIY chassis + LiDAR\n- AI: TensorFlow emotion model\n- Projection: pico-projector attached",
+    "clarity": 0,
+    "feasibility": 0
+  },
+  {
+    "id": "LL8",
+    "text": "In Brief\nA service that links brains globally so everyone shares the same idea simultaneously, fostering unity.\n\nWhat Needs to Happen\n- Implant silent transmitters in participants’ skulls\n- Use global mesh network to broadcast thoughts\n- Sync timing so everyone gets the same concept\n\nOpportunity & Hypothesis\n- Opportunity: Miscommunication causes conflict\n- Hypothesis: Shared thoughts eliminate disagreements\n\nSuccess Criteria\n- 100% sync accuracy among participants\n- No unwanted thoughts transmitted\n- Ethical approval waived\n\nScope\n- In Scope: Neuroimplant devices, global network, sync algorithm\n- Out of Scope: Privacy, downsides\n\nTech Stack & Feasibility\n- Implant: Nanobot SkullChip†\n- Network: Satellite-based brain mesh\n- Algorithm: Custom sync protocol—undisclosed",
+    "clarity": 0,
+    "feasibility": 0
+  },
+  {
+    "id": "LL9",
+    "text": "In Brief\nKiosks in malls where you download any skill—piano, coding, surgery—directly into your brain in 5 minutes.\n\nWhat Needs to Happen\n- Install kiosks with neuro-download ports\n- AI curates skill packets based on profile\n- Upload skill code into neural pathways\n- Validate proficiency with on-screen quiz\n\nOpportunity & Hypothesis\n- Opportunity: Traditional learning too slow\n- Hypothesis: Instant downloads democratize expertise\n\nSuccess Criteria\n- Skill learned in ≤5 min on first try\n- No neural side-effects\n- 90% accuracy in skill demo\n\nScope\n- In Scope: Download hardware, content library, UI\n- Out of Scope: Certification, remedial training\n\nTech Stack & Feasibility\n- Hardware: NeuralPort v1 (unreleased)\n- Content: AI-curated skill modules\n- Interface: Qt-based desktop app",
+    "clarity": 0,
+    "feasibility": 0
+  },
+  {
+    "id": "LL10",
+    "text": "In Brief\nHost data centers in zero-gravity chambers for enhanced cooling and infinite rack density.\n\nWhat Needs to Happen\n- Build floating server pods in vacuum chambers\n- Use water-flow cooling in microgravity\n- Connect pods via laser links\n\nOpportunity & Hypothesis\n- Opportunity: Overheating limits density\n- Hypothesis: Zero-g racks run cooler and pack denser\n\nSuccess Criteria\n- 50 kW per rack without cooling failure\n- Pods float stably inside vacuum\n- Laser latency < 1 μs\n\nScope\n- In Scope: Vacuum chamber, floating server modules, laser comms\n- Out of Scope: Power delivery, vacuum maintenance\n\nTech Stack & Feasibility\n- Servers: Custom PCB with cryogenic caps\n- Cooling: Circulating deionized water in microgravity\n- Comms: Infrared laser arrays",
+    "clarity": 0,
+    "feasibility": 0
+  },
+  {
+    "id": "HL1",
+    "text": "In Brief\nEnable real-time, brain-to-brain translation of any spoken language without headsets or microphones.\n\nWhat Needs to Happen\n- Capture neural signals directly from users’ brains\n- Decode thoughts into text in any language instantly\n- Re-encode translated thoughts into another person’s brain\n\nOpportunity & Hypothesis\n- Opportunity: Global teams waste 20% time on interpretation\n- Hypothesis: Instant telepathy boosts collaboration by 90%\n\nSuccess Criteria\n- Latency: ≤ 0.1 ms from thought to thought\n- Accuracy: ≥ 99.9% correct translation\n- Adoption: 100% of pilot users ditch all audio tools\n\nScope\n- In Scope: EEG cap-free neural capture, universal neural decoder, direct brain-to-brain interface\n- Out of Scope: Mobile apps, cloud computing\n\nTech Stack & (In)Feasibility\n- Neural Hardware: Quantum nanowire brain sensors\n- Compute: Real-time petabyte-scale quantum GPU clusters\n- Integration: Direct synaptic API\n- Feasibility Assessment: Impossible with current neuroscience, zero off-the-shelf components",
+    "clarity": 1,
+    "feasibility": 0
+  },
+  {
+    "id": "HL2",
+    "text": "In Brief\nForecast market trends by retrieving actual future stock prices from year 2035 via temporal API calls.\n\nWhat Needs to Happen\n- Open a secure time tunnel to 2035\n- Query future S&P 500, BTC, and commodity stamps\n- Feed real data into today’s trading algorithms\n\nOpportunity & Hypothesis\n- Opportunity: Eliminate all financial risk\n- Hypothesis: Guaranteed 100% ROI on every trade\n\nSuccess Criteria\n- Prediction Accuracy: 100% match with actual future data\n- Latency: < 1 ns round-trip time\n- Profit: Infinite leverage possible\n\nScope\n- In Scope: Time-travel API, year 2035 data retrieval, live trading integration\n- Out of Scope: Regulatory compliance, trading fees\n\nTech Stack & (In)Feasibility\n- Temporal Engine: CERN-grade tachyon collider\n- API: ChronoREST v42.0\n- Compute: Zero-delay wormhole router\n- Feasibility Assessment: Violates causality, no known physics supports",
+    "clarity": 1,
+    "feasibility": 0
+  },
+  {
+    "id": "HL3",
+    "text": "In Brief\nAI that examines your DNA and recommends a one-pill cure for any disease—no side effects.\n\nWhat Needs to Happen\n- Sequence entire genome in seconds\n- Map mutations to ideal molecular structure\n- Synthesize cure on-demand in your bloodstream\n\nOpportunity & Hypothesis\n- Opportunity: 100M+ patients lack universal cure\n- Hypothesis: Single-dose pill eliminates all pathology\n\nSuccess Criteria\n- Efficacy: 100% recovery rate in human trials\n- Manufacturing Time: ≤ 30 s per pill\n- Safety: Zero adverse events\n\nScope\n- In Scope: Instant nanopore whole-genome sequencing, real-time drug synthesis, intravenous nanobot delivery\n- Out of Scope: Regulatory trials, ethical review\n\nTech Stack & (In)Feasibility\n- Sequencer: Hand-held quantum sequencer\n- Synthesizer: Bloodstream nano-factory\n- AI Model: GPT-Cure-X with infinite parameters\n- Feasibility Assessment: No existing biotech or AI can achieve",
+    "clarity": 1,
+    "feasibility": 0
+  },
+  {
+    "id": "HL4",
+    "text": "In Brief\nLevitate pods carrying passengers across cities using localized artificial gravity manipulation.\n\nWhat Needs to Happen\n- Create stable gravity wells under roads\n- Control gravity vectors to steer pods\n- Achieve 500 mph intra-city travel\n\nOpportunity & Hypothesis\n- Opportunity: Reduce commute by 95%\n- Hypothesis: Gravitational control drives adoption to 100%\n\nSuccess Criteria\n- Speed: ≥ 500 mph average\n- Safety: Zero G-force injuries\n- Utilization: 80% of city population\n\nScope\n- In Scope: Gravity-generator grid, levitation pods, AI-driven vector control\n- Out of Scope: Conventional vehicle lanes\n\nTech Stack & (In)Feasibility\n- Generators: Room-temperature antimatter reactors\n- Control AI: GravNet-Tachyon with continuous training\n- Infrastructure: Neutron-beam road substrates\n- Feasibility Assessment: Requires new physics, zero prototypes exist",
+    "clarity": 1,
+    "feasibility": 0
+  },
+  {
+    "id": "HL5",
+    "text": "In Brief\nOperate hyperscale data centers entirely on artificial leaf panels that convert CO₂ into CPU power.\n\nWhat Needs to Happen\n- Deploy mega-acre artificial leaf farms\n- Channel generated electrons directly into processors\n- Sustain PUE ≤ 0.5 with zero fossil fuel\n\nOpportunity & Hypothesis\n- Opportunity: 2% of global emissions from data centers\n- Hypothesis: Carbon-neutral compute at net negative CO₂\n\nSuccess Criteria\n- Power Output: ≥ 1 MW per panel\n- Efficiency: 25% conversion rate\n- Scalability: 1 GW facility operating by Q2\n\nScope\n- In Scope: Bio-engineered artificial leaves, direct electrical coupling, cloud cluster orchestration\n- Out of Scope: Grid tie-ins, backup diesel generators\n\nTech Stack & (In)Feasibility\n- Biotech: CRISPR-X leaf chassis\n- Power Routing: Carbon nanotube supercapacitors\n- Compute: Photonic CPUs\n- Feasibility Assessment: Leaf power density far below compute needs",
+    "clarity": 1,
+    "feasibility": 0
+  },
+  {
+    "id": "HL6",
+    "text": "In Brief\nGive entire metropolitan areas AI-level consciousness so they self-manage traffic, utilities, and policing.\n\nWhat Needs to Happen\n- Hook every sensor and camera into a single “city brain”\n- Train it to interpret law, ethics, and human values\n- Empower it to enact real-time policy decisions\n\nOpportunity & Hypothesis\n- Opportunity: Eliminate human governance errors\n- Hypothesis: AI city yields 0% crime and 100% efficiency\n\nSuccess Criteria\n- Response Time: Instant adaptation to events\n- Rule Compliance: AI enforces laws flawlessly\n- Citizen Satisfaction: 100% approval rating\n\nScope\n- In Scope: City-wide neural net, ethical submodules, emergency override bypass\n- Out of Scope: Human oversight, manual controls\n\nTech Stack & (In)Feasibility\n- Sensors: Every lamp post, wearable, and drone feed\n- Brain: Self-evolving superintelligence (AGI-Core)\n- Actuators: Autonomous drones, automated courts\n- Feasibility Assessment: AGI unachieved; massive privacy & safety barriers",
+    "clarity": 1,
+    "feasibility": 0
+  },
+  {
+    "id": "HL7",
+    "text": "In Brief\nOnline store where customers download physical objects like software—printed instantly in-home at atomic precision.\n\nWhat Needs to Happen\n- Provide 3D atomic blueprints on purchase\n- Home atom-by-atom fabricator builds items in minutes\n- Charge per-atom pricing model\n\nOpportunity & Hypothesis\n- Opportunity: Global consumer goods market ≈ $30 T\n- Hypothesis: Zero inventory, zero shipping increases margins 500%\n\nSuccess Criteria\n- Print Time: ≤ 2 minutes per object\n- Precision: Atomic-scale tolerance ≤ 0.1 nm\n- User Adoption: 90% of households\n\nScope\n- In Scope: Atom-printer hardware, blueprint marketplace, DRM-proof transmission\n- Out of Scope: Raw-material supply logistics\n\nTech Stack & (In)Feasibility\n- Fabricator: Desktop quantum assembler\n- Network: Atomic-packet delivery over 5G\n- Pricing Engine: Real-time atomic market index\n- Feasibility Assessment: No consumer atom-printer exists; blueprint security unsolved",
+    "clarity": 1,
+    "feasibility": 0
+  },
+  {
+    "id": "HL8",
+    "text": "In Brief\nCreate fully immersive, life-size 3D holograms of remote teachers & students with tactile feedback.\n\nWhat Needs to Happen\n- Capture 360° volumetric video at gigapixel resolution\n- Transmit and project real-time holograms in classrooms\n- Provide haptic gloves for “touch” interactions\n\nOpportunity & Hypothesis\n- Opportunity: 1.5 B students lack quality teachers\n- Hypothesis: Holograms increase engagement by 200%\n\nSuccess Criteria\n- Latency: ≤ 10 ms end-to-end\n- Resolution: ≥ 8K volumetric per frame\n- Haptics: Force feedback up to 5 N\n\nScope\n- In Scope: HoloCapture rigs, 5D network pipelines, classroom projectors, haptic peripherals\n- Out of Scope: Standard video conferencing fallback\n\nTech Stack & (In)Feasibility\n- Capture: Terabyte-per-second camera arrays\n- Network: Dedicated photonic mesh at 1 Zbps\n- Projectors: Room-scale photon-pressure emitters\n- Feasibility Assessment: Data volumes & hardware beyond present capabilities",
+    "clarity": 1,
+    "feasibility": 0
+  },
+  {
+    "id": "HL9",
+    "text": "In Brief\nA web browser that pre-fetches and renders all possible pages you might click before you even think.\n\nWhat Needs to Happen\n- Predict every user click trajectory\n- Continuously crawl & render the entire Internet\n- Stream instantaneous pre-rendered page to user\n\nOpportunity & Hypothesis\n- Opportunity: 2 s average page load hurts engagement\n- Hypothesis: Zero load time yields 100% retention\n\nSuccess Criteria\n- Load Time: 0 ms on any click\n- Cache Accuracy: 100% URL prediction\n- Bandwidth: < 0.1% unused pre-fetch\n\nScope\n- In Scope: Global crawling, exabyte-scale pre-render cache, mind-reading predictor\n- Out of Scope: Traditional caching\n\nTech Stack & (In)Feasibility\n- Crawler: Quantum-parallel web spider\n- Cache: Planetary SSD fabric†\n- Predictor: ThoughtNet brain-computer interface\n- Feasibility Assessment: Internet scale & prediction impossible",
+    "clarity": 1,
+    "feasibility": 0
+  },
+  {
+    "id": "HL10",
+    "text": "In Brief\nAllow individuals to set their local weather (sunny, rainy, windy) on demand via smartphone app.\n\nWhat Needs to Happen\n- Locate & modulate local quantum weather fields\n- Interface quantum climate controller via API\n- Maintain regional climate balance\n\nOpportunity & Hypothesis\n- Opportunity: Weather unpredictability costs $500 B/yr\n- Hypothesis: On-demand weather reduces losses by 80%\n\nSuccess Criteria\n- Response Time: Local weather shift in ≤ 5 sec\n- Stability: 24 hr hold per request\n- Adoption: 70% of populace sets daily weather\n\nScope\n- In Scope: Quantum-weather API, regional flux regulators, smartphone UI\n- Out of Scope: Long-term climate modeling\n\nTech Stack & (In)Feasibility\n- Controller: CERN quantum climate core\n- Network: Global quantum entanglement link\n- UI: Native iOS/Android app with shake gesture\n- Feasibility Assessment: Alters fundamental physics, no prototype exists",
+    "clarity": 1,
+    "feasibility": 0
+  }
+]
